@@ -17,37 +17,3 @@
 	https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_variables.scss
 	
 */
-
-/* palette */
-$myAqua:			#00C993;
-$myAquaDark:		#024930;
-$myAquaLight:		#9BDBC1;
-$myGrayVeryLight:	#eee;
-
-/* my standard colors */
-$myBlack: 			#000;
-$myWhite:			#fff;
-
-/* mapping to template */
-
-$myPrimary:				$myAqua;
-$myPrimaryDark:			$myAquaDark;
-$myPrimaryLight:		$myAquaLight;
-$myBackground:			$myWhite;
-
-/* mapping to bootstratp */
-$linkColor: 					$myPrimary;
-$btnPrimaryBackgroundHighlight: $myPrimary;
-$navbarBackgroundHighlight: 	$myPrimaryDark;
-$navbarLinkColor: 				$myWhite;
-$navbarLinkColorHover: 			$myPrimary;
-$bodyBackground: 				$myBackground;
-$dropdownBackground: 			$myBackground;
-$dropdownLinkColor: 			$myPrimary;
-$hrBorder: 						$myBlack;
-$heroUnitBackground: 			lighten($myPrimaryLight, 20);
-$tableBackgroundAccent:			$heroUnitBackground;
-$dropdownLinkColorHover: 		$myPrimary;
-
-@import "bootstrap";
-@import "bootstrap-responsive";

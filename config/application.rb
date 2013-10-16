@@ -21,5 +21,7 @@ module StatisticallySpeaking
     # config.i18n.default_locale = :de
 	
 	config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+	
+	config.autoload_paths += Dir["#{config.root}/lib"]
   end
 end

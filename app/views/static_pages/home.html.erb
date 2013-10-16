@@ -27,7 +27,7 @@ $(document).ready(function(){
 	  <span>
 		Get a Quote!
 	  </span>
-	  <input class="symbol"></input><button id="getQuote" class="btn btn-large btn-primary"><b class="icon-search"></b></button>
+	  <input class="symbol" value="<%= @price %>"></input><button id="getQuote" class="btn btn-large btn-primary"><b class="icon-search"></b></button>
   </div>
   <div class="quote_result_placeholder"></div>
   <%= link_to "Sign up now!", signup_path, class: "pull-left" %>

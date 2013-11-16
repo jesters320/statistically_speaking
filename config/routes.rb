@@ -1,4 +1,6 @@
 StatisticallySpeaking::Application.routes.draw do
+  resources :stocks
+
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
   get "static_pages/home"

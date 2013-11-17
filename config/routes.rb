@@ -1,5 +1,9 @@
 StatisticallySpeaking::Application.routes.draw do
-  resources :stocks
+  resources :stocks do
+	member do
+		get 'get_quote'
+	end
+  end
 
   resources :sessions, only: [:new, :create, :destroy]
   resources :users

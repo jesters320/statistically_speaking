@@ -22,6 +22,9 @@
   <div class="field">
     <%= f.label :price %><br>
     <%= f.text_field :price %>
+	<% if @stock.id? %>
+		<%= link_to 'get quote', get_quote_stock_path, :remote => true, :id => "get_quote_link" %>
+	<% end %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -1,5 +1,5 @@
 class StocksController < ApplicationController
-  before_action :set_stock, only: [:show, :edit, :update, :destroy]
+  before_action :set_stock, only: [:show, :edit, :update, :destroy, :get_quote]
 
   # GET /stocks
   # GET /stocks.json
@@ -61,6 +61,13 @@ class StocksController < ApplicationController
     end
   end
 
+  def get_quote
+	
+	respond_to do |format|
+		format.js
+	end
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_stock
